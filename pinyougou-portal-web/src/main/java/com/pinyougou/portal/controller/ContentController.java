@@ -1,0 +1,27 @@
+package com.pinyougou.portal.controller;
+
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.pinyougou.content.service.ContentService;
+import com.pinyougou.pojo.TbContent;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/content")
+public class ContentController {
+
+    @Reference(timeout = 5000)
+    private ContentService contentService;
+
+    /**
+     * 获得广告轮播图
+     * @param categoryId
+     * @return
+     */
+    @RequestMapping("/findByCategoryId")
+    public List<TbContent> findByCategoryId(Long categoryId){
+        return contentService.findByCategoryId(categoryId);
+    }
+}

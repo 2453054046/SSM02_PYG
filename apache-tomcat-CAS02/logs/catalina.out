@@ -1,0 +1,73 @@
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: H:\javaJDK\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\AUSU\bin;E:\git\Git\mingw64\bin;E:\git\Git\usr\local\bin;E:\git\Git\usr\bin;E:\git\Git\usr\bin;E:\git\Git\mingw64\bin;E:\git\Git\usr\bin;C:\Users\AUSU\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;H:\javaJDK\bin;H:\javaJDK\jre\bin;E:\javaMysql\bin;E:\mysql\bin;E:\apache-maven-3.6.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\gradle-5.6.2-all\gradle-5.6.2\bin;E:\SVN\SVNserver\bin;E:\SVN\TortoiseSVN-1.12.2.28653-x64-svn-1.12.2\bin;C:\Users\AUSU\AppData\Local\Microsoft\WindowsApps;E:\git\Git\usr\bin\vendor_perl;E:\git\Git\usr\bin\core_perl;.
+十二月 02, 2019 10:02:19 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:19 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 801 ms
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.52
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\cas.war
+2019-12-02 10:02:31,395 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - <Loaded 1 services.>
+2019-12-02 10:02:32,177 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - <Starting Quartz Scheduler now>
+十二月 02, 2019 10:02:32 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\docs
+十二月 02, 2019 10:02:32 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\examples
+十二月 02, 2019 10:02:38 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\host-manager
+十二月 02, 2019 10:02:38 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\manager
+十二月 02, 2019 10:02:38 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\ROOT
+十二月 02, 2019 10:02:38 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:39 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:39 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 19558 ms
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+2019-12-02 10:02:49,620 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - <Shutting down Quartz Scheduler>
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [perf4j-async-stats-appender-sink-CoalescingStatistics] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [FileWatchdog] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-3] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-4] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-5] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-6] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-7] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-8] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-9] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-10] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]

@@ -1,0 +1,26 @@
+<html>
+
+<head>
+	<title>angularJS 表达式，事件指令</title>
+	<script src = "angular.min.js"></script>
+	<script>
+		var app=angular.module('myApp',[]);
+		
+		app.controller('myController',function($scope){
+			$scope.add=function(){
+				
+				$scope.z=parseInt($scope.x)+parseInt($scope.y);
+			}
+		});
+	
+	</script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+x:<input ng-model="x" >
+y:<input ng-model="y" >
+ng-click：当点击时触发$scope中定义的方法
+<button ng-click="add()">运算</button>
+运行结果是：{{z}}
+
+</body>
+</html>

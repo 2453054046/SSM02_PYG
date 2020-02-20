@@ -1,0 +1,24 @@
+<html>
+
+<head>
+	<title>angularJS 表达式，循环数组</title>
+	<script src = "angular.min.js"></script>
+	<script>
+		var app=angular.module('myApp',[]);
+		
+		app.controller('myController',function($scope){
+			$scope.lsit = [100,200,300,400];
+		});
+	
+	</script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+使用ng-repeat="代理变量 in 数组变量"，相当于foreach
+<table>
+	<tr ng-repeat="i in list">
+		<td>{{i}}</td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试angularJS获取后台数据</title>
+    <script src="angular.min.js"></script>
+    <script>
+        /**
+         *定义一个叫myApp的模块    []内放要掉用的别的模块，相当于Spring的依赖注入，将一个bean注入另一个bean
+         */
+        var app = angular.module("myApp",[]);
+        /**$scope是视图可控制器的连接桥梁
+         *
+         * 基于作用域视图在修改数据时会立刻更新 $scope,同样的$scope 发生改变时也会立刻重新渲染视图.
+         *
+         * $http：angularJS的内置服务，封装了ajax请求
+         */
+        app.controller('myController',function($scope,$http) {
+           //定义页面初始函数，发送请求，接收json参数,装入$scope回显给视图
+            $scope.findAll = function () {
+                $http.get("data.json").success(
+                    function (response) {
+                        $scope.list = response;
+                    }
+                )
+            }
+            /*
+            如果直接写那么在任何页面调用本函数都会在页面加载后执行此函数
+            $scope.findAll;
+             */
+
+        });
+
+
+    </script>
+</head>
+<!--ng-app="指定要使用的模块"  ng-controller="模块中的控制器" ng-init="初始化的变量或函数"-->
+<body ng-app="myApp" ng-controller="myController" ng-init="findAll()">
+<table>
+    <tr>
+        <td>姓名</td>
+        <tb>数学</tb>
+        <tb>语文</tb>
+    </tr>
+    <tr ng-repeat="x in list">
+        <td>{{x.user}}</td>
+        <td>{{x.shuxue}}</td>
+        <td>{{x.yuwen}}</td>
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<title>angularJS 表达式，控制器</title>
+	<script src = "angular.min.js"></script>
+	<script>
+		//定义一个叫myApp的模块    []内放要掉用的别的模块，相当于Spring的依赖注入，将一个bean注入另一个bean
+		var app=angular.module('myApp',[]);
+		//定义控制器						
+		//$scope是视图可控制器的连接桥梁	
+		//基于作用域视图在修改数据时会立刻更新 $scope,同样的$scope 发生改变时也会立刻重新渲染视图.		
+		
+		app.controller('myController',function($scope){
+			//向$scope作用域内放入一个add方法
+			
+			$scope.add=function(){
+				//取出$scope在视图中的变量,parseInt()将字符串转化成Int类型
+				
+				return parseInt($scope.x)+parseInt($scope.y);
+			}
+		});
+	
+	</script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+ng-app="指定要使用的模块"  ng-controller="模块中的控制器"
+
+x:<input ng-model="x" >
+y:<input ng-model="y" >
+运行结果是：{{add()}}
+
+</body>
+</html>

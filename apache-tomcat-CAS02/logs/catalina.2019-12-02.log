@@ -1,0 +1,349 @@
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: H:\javaJDK\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\AUSU\bin;E:\git\Git\mingw64\bin;E:\git\Git\usr\local\bin;E:\git\Git\usr\bin;E:\git\Git\usr\bin;E:\git\Git\mingw64\bin;E:\git\Git\usr\bin;C:\Users\AUSU\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;H:\javaJDK\bin;H:\javaJDK\jre\bin;E:\javaMysql\bin;E:\mysql\bin;E:\apache-maven-3.6.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\gradle-5.6.2-all\gradle-5.6.2\bin;E:\SVN\SVNserver\bin;E:\SVN\TortoiseSVN-1.12.2.28653-x64-svn-1.12.2\bin;C:\Users\AUSU\AppData\Local\Microsoft\WindowsApps;E:\git\Git\usr\bin\vendor_perl;E:\git\Git\usr\bin\core_perl;.
+十二月 02, 2019 10:02:19 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:19 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 801 ms
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.52
+十二月 02, 2019 10:02:19 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\cas.war
+十二月 02, 2019 10:02:32 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\docs
+十二月 02, 2019 10:02:32 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\examples
+十二月 02, 2019 10:02:34 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: H:\javaJDK\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;H:\javaJDK\bin;H:\javaJDK\jre\bin;E:\javaMysql\bin;E:\mysql\bin;E:\apache-maven-3.6.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\gradle-5.6.2-all\gradle-5.6.2\bin;E:\SVN\SVNserver\bin;E:\SVN\TortoiseSVN-1.12.2.28653-x64-svn-1.12.2\bin;C:\Users\AUSU\AppData\Local\Microsoft\WindowsApps;;.
+十二月 02, 2019 10:02:34 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:34 上午 org.apache.coyote.AbstractProtocol init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-bio-8999"]
+java.net.BindException: Address already in use: JVM_Bind <null>:8999
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:410)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:640)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:813)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:397)
+	... 17 more
+
+十二月 02, 2019 10:02:34 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8999]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8999]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:813)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind <null>:8999
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:410)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:640)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:397)
+	... 17 more
+
+十二月 02, 2019 10:02:34 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:34 上午 org.apache.coyote.AbstractProtocol init
+严重: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: Address already in use: JVM_Bind <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:410)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:640)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:813)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:397)
+	... 16 more
+
+十二月 02, 2019 10:02:34 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:813)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:410)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:640)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:397)
+	... 16 more
+
+十二月 02, 2019 10:02:34 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 771 ms
+十二月 02, 2019 10:02:34 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 02, 2019 10:02:34 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.52
+十二月 02, 2019 10:02:34 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\cas.war
+十二月 02, 2019 10:02:38 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\host-manager
+十二月 02, 2019 10:02:38 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\manager
+十二月 02, 2019 10:02:38 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\ROOT
+十二月 02, 2019 10:02:38 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:39 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:39 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 19558 ms
+十二月 02, 2019 10:02:42 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\docs
+十二月 02, 2019 10:02:42 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\examples
+十二月 02, 2019 10:02:42 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\host-manager
+十二月 02, 2019 10:02:42 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\manager
+十二月 02, 2019 10:02:42 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\ROOT
+十二月 02, 2019 10:02:42 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 8344 ms
+十二月 02, 2019 10:02:42 上午 org.apache.catalina.core.StandardServer await
+严重: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:426)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:777)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:723)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:321)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+
+十二月 02, 2019 10:02:42 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:42 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:42 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [perf4j-async-stats-appender-sink-CoalescingStatistics] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [FileWatchdog] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-3] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-4] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-5] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-6] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-7] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-8] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-9] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-10] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:43 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:43 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:43 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:43 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [perf4j-async-stats-appender-sink-CoalescingStatistics] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [FileWatchdog] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-3] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-4] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-5] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-6] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-7] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-8] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-9] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cas] appears to have started a thread named [scheduler_Worker-10] but has failed to stop it. This is very likely to create a memory leak.
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:49 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:52 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: H:\javaJDK\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;H:\javaJDK\bin;H:\javaJDK\jre\bin;E:\javaMysql\bin;E:\mysql\bin;E:\apache-maven-3.6.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\gradle-5.6.2-all\gradle-5.6.2\bin;E:\SVN\SVNserver\bin;E:\SVN\TortoiseSVN-1.12.2.28653-x64-svn-1.12.2\bin;C:\Users\AUSU\AppData\Local\Microsoft\WindowsApps;;.
+十二月 02, 2019 10:02:52 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:52 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:52 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 374 ms
+十二月 02, 2019 10:02:52 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 02, 2019 10:02:52 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.52
+十二月 02, 2019 10:02:52 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\cas.war
+十二月 02, 2019 10:02:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\docs
+十二月 02, 2019 10:02:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\examples
+十二月 02, 2019 10:02:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\host-manager
+十二月 02, 2019 10:02:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\manager
+十二月 02, 2019 10:02:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\a.code\ideaHome03\SSM_Shopping\SSM_Shopping02\apache-tomcat-CAS02\webapps\ROOT
+十二月 02, 2019 10:02:58 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8999"]
+十二月 02, 2019 10:02:58 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+十二月 02, 2019 10:02:58 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 5903 ms
+十二月 02, 2019 10:10:59 上午 org.apache.catalina.startup.Catalina stopServer
+严重: Could not contact localhost:8005. Tomcat may not be running.
+十二月 02, 2019 10:10:59 上午 org.apache.catalina.startup.Catalina stopServer
+严重: Catalina.stop: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:370)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:457)
+

@@ -1,0 +1,13 @@
+com\pinyougou\manager\SpecificationController.class
+com\pinyougou\manager\GoodsDescController.class
+com\pinyougou\manager\controller.class
+com\pinyougou\manager\ItemController.class
+com\pinyougou\manager\LoginController.class
+com\pinyougou\manager\ContentCategoryController.class
+com\pinyougou\manager\GoodsController.class
+com\pinyougou\manager\ContentController.class
+com\pinyougou\manager\SellerController.class
+com\pinyougou\manager\UploadController.class
+com\pinyougou\manager\ItemCatController.class
+com\pinyougou\manager\TypeTemplateController.class
+com\pinyougou\manager\SpecificationOptionController.class

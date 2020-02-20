@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pinyougou-sellergoods-service" />
+        <module name="pinyougou-cart-interface" />
+        <module name="pinyougou-common" />
+        <module name="pinyougou-page-interface" />
+        <module name="pinyougou-solr-util" />
+        <module name="pinyougou-order-service" />
+        <module name="pinyougou-shop-web" />
+        <module name="pinyougou-portal-web" />
+        <module name="pinyougou-manager-web" />
+        <module name="pinyougou-seckill-service" />
+        <module name="aliyun-java-sdk-core" />
+        <module name="testRedis" />
+        <module name="alicom-dysms-api" />
+        <module name="pinyougou-cart-web" />
+        <module name="pinyougou-search-web" />
+        <module name="pinyougou-user-web" />
+        <module name="pinyougou-dao" />
+        <module name="testCas_demo01" />
+        <module name="pinyougou-user-interface" />
+        <module name="pinyougou-page-service" />
+        <module name="testSorl" />
+        <module name="aliyun-java-sdk-dysmsapi" />
+        <module name="pinyougou-task-service" />
+        <module name="pinyougou-order-interface" />
+        <module name="pinyougou-pay-interface" />
+        <module name="test-pinyougou-springboot" />
+        <module name="pinyougou-cart-service" />
+        <module name="alicom-mns-receive-samples" />
+        <module name="pinyougou-search-service" />
+        <module name="pinyougou-user-service" />
+        <module name="pinyougou-pojo" />
+        <module name="pinyougou-seckill-web" />
+        <module name="pinyougou-sellergoods-interface" />
+        <module name="pinyougou-pay-service" />
+        <module name="pinyougou-seckill-interface" />
+        <module name="pinyougou-content-service" />
+        <module name="itcast-sms-service" />
+        <module name="pinyougou-page-web" />
+        <module name="pinyougou-search-interface" />
+        <module name="pinyougou-content-interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alicom-dysms-api" target="1.5" />
+      <module name="alicom-mns-receive-samples" target="1.6" />
+      <module name="aliyun-java-sdk-core" target="1.6" />
+      <module name="aliyun-java-sdk-dysmsapi" target="1.6" />
+      <module name="itcast-sms-service" target="1.8" />
+      <module name="pinyougou-cart-interface" target="1.8" />
+      <module name="pinyougou-cart-service" target="1.8" />
+      <module name="pinyougou-cart-web" target="1.8" />
+      <module name="pinyougou-common" target="1.8" />
+      <module name="pinyougou-common (1)" target="1.8" />
+      <module name="pinyougou-content-interface" target="1.8" />
+      <module name="pinyougou-content-service" target="1.8" />
+      <module name="pinyougou-contents-ervice02" target="1.8" />
+      <module name="pinyougou-dao" target="1.8" />
+      <module name="pinyougou-manager-web" target="1.8" />
+      <module name="pinyougou-order-interface" target="1.8" />
+      <module name="pinyougou-order-service" target="1.8" />
+      <module name="pinyougou-page-interface" target="1.8" />
+      <module name="pinyougou-page-service" target="1.8" />
+      <module name="pinyougou-page-web" target="1.8" />
+      <module name="pinyougou-pay-interface" target="1.8" />
+      <module name="pinyougou-pay-service" target="1.8" />
+      <module name="pinyougou-pojo" target="1.8" />
+      <module name="pinyougou-portal-web" target="1.8" />
+      <module name="pinyougou-search-interface" target="1.8" />
+      <module name="pinyougou-search-service" target="1.8" />
+      <module name="pinyougou-search-web" target="1.8" />
+      <module name="pinyougou-seckill-interface" target="1.8" />
+      <module name="pinyougou-seckill-service" target="1.8" />
+      <module name="pinyougou-seckill-web" target="1.8" />
+      <module name="pinyougou-sellergoods-interface" target="1.8" />
+      <module name="pinyougou-sellergoods-service" target="1.8" />
+      <module name="pinyougou-shop-web" target="1.8" />
+      <module name="pinyougou-solr-util" target="1.8" />
+      <module name="pinyougou-task-service" target="1.8" />
+      <module name="pinyougou-user-interface" target="1.8" />
+      <module name="pinyougou-user-service" target="1.8" />
+      <module name="pinyougou-user-web" target="1.8" />
+      <module name="pinyougoucommon" target="1.8" />
+      <module name="pinyougouparent" target="1.8" />
+      <module name="test-pinyougou-springboot" target="1.8" />
+      <module name="testCas_demo01" target="1.7" />
+      <module name="testRedis" target="1.5" />
+      <module name="testSorl" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="itcast-sms-service" options="-parameters" />
+      <module name="test-pinyougou-springboot" options="-parameters" />
+    </option>
+  </component>
+</project>
