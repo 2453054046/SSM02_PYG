@@ -113,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pinyougou-user-service/src/main/java/com/pinyougou/user/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="174" column="25" selection-start-line="174" selection-start-column="25" selection-end-line="174" selection-end-column="25" />
+            <state relative-caret-position="387">
+              <caret line="188" column="43" selection-start-line="188" selection-start-column="43" selection-end-line="188" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -217,7 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pinyougou-seckill-interface/src/main/java/com/pinyougou/seckill/service/SeckillGoodsService.java" />
         <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/java/com/pinyougou/seckill/controller/SeckillGoodsController.java" />
         <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-index.html" />
         <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/service/seckillGoodsService.js" />
@@ -268,6 +267,7 @@
         <option value="$PROJECT_DIR$/pinyougou-search-service/src/main/resources/spring/applicationContext-solr.xml" />
         <option value="$PROJECT_DIR$/pinyougou-page-service/src/main/resources/spring/applicationContext-service.xml" />
         <option value="$PROJECT_DIR$/pinyougou-pojo/src/main/java/entity/Result.java" />
+        <option value="$PROJECT_DIR$/pinyougou-user-service/src/main/java/com/pinyougou/user/service/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1065,8 +1065,16 @@
       <workItem from="1578040727185" duration="938000" />
       <workItem from="1578210797607" duration="2599000" />
       <workItem from="1582021972017" duration="1222000" />
-      <workItem from="1582190377063" duration="3048000" />
+      <workItem from="1582190377063" duration="5872000" />
     </task>
+    <task id="LOCAL-00001" summary="商城项目属于B2B2C项目（企业对企业对&#10;个人）似京东商城、天猫商城。网站采用&#10;商家入驻的模式，商家入驻平台提交申请，&#10;有平台进行资质审核，审核通过后，商家&#10;拥有独立的管理后台录入商品信息。">
+      <created>1582204177374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582204177374</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1102,7 +1110,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474519000" />
+    <option name="totallyTimeSpent" value="477343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -1115,7 +1123,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.27144772" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" visible="true" weight="0.27144772" />
       <window_info anchor="bottom" id="JRebel Console" order="0" sideWeight="0.50067025" side_tool="true" weight="0.18967922" />
       <window_info anchor="bottom" id="JRebel Executor" order="1" weight="0.11854951" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32914925" />
@@ -1127,9 +1135,9 @@
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3574297" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" visible="true" weight="0.25970548" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067025" side_tool="true" weight="0.58856344" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067025" side_tool="true" weight="0.5515395" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Version Control" order="16" />
@@ -1193,6 +1201,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="商城项目属于B2B2C项目（企业对企业对&#10;个人）似京东商城、天猫商城。网站采用&#10;商家入驻的模式，商家入驻平台提交申请，&#10;有平台进行资质审核，审核通过后，商家&#10;拥有独立的管理后台录入商品信息。" />
+    <option name="LAST_COMMIT_MESSAGE" value="商城项目属于B2B2C项目（企业对企业对&#10;个人）似京东商城、天猫商城。网站采用&#10;商家入驻的模式，商家入驻平台提交申请，&#10;有平台进行资质审核，审核通过后，商家&#10;拥有独立的管理后台录入商品信息。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1693,8 +1705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-user-service/src/main/java/com/pinyougou/user/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="174" column="25" selection-start-line="174" selection-start-column="25" selection-end-line="174" selection-end-column="25" />
+        <state relative-caret-position="387">
+          <caret line="188" column="43" selection-start-line="188" selection-start-column="43" selection-end-line="188" selection-end-column="43" />
         </state>
       </provider>
     </entry>
